@@ -24,6 +24,9 @@ export const Grain = ({ size = 20 }: P) => (
 export const Monitor = ({ size }: P) => (
   <svg {...base(size)}><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" /></svg>
 );
+export const Mobile = ({ size }: P) => (
+  <svg {...base(size)}><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M11 18h2" /></svg>
+);
 export const Store = ({ size }: P) => (
   <svg {...base(size)}><path d="M4 10v10h16V10" /><path d="M3 10l2-6h14l2 6" /><path d="M3 10c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 3 3s3-1.3 3-3" /><path d="M10 20v-5h4v5" /></svg>
 );

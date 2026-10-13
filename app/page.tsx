@@ -5,7 +5,7 @@ import {
   stack, modules, phases, revenue, kpis, people, docFile,
 } from "@/lib/content";
 import { SectionHead } from "@/components/ui";
-import { Arrow, Download, FaceIcon } from "@/components/Icons";
+import { Arrow, Download, FaceIcon, Mobile, Monitor } from "@/components/Icons";
 
 const whoColor: Record<string, string> = {
   "Mill owner": "var(--c-gold)",
@@ -31,6 +31,8 @@ export default function Home() {
           <div className="hero-actions rise d3">
             <a href="#flow" className="btn btn-primary">See the trip flow <Arrow /></a>
             <a href={docFile} download className="btn btn-ghost"><Download /> Download document</a>
+            <a href="https://oryzaflow-mill-dashboard.lathusanthurairajah-9a4.workers.dev/login/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><Monitor size={18} /> Mill Dashboard</a>
+            <a href="https://oryzaflow-mobile-ui.lathusanthurairajah-9a4.workers.dev/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost"><Mobile size={18} /> Mobile UI/UX</a>
           </div>
           <div className="facts rise d3">
             {keyFacts.map((f) => (
